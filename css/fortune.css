@@ -1,0 +1,67 @@
+html {
+    font-size:16px;
+  }
+
+@font-face {
+    font-family: "Acme-Regular";
+    src: url("Acme-Regular.ttf");
+    font-weight: bold;
+  }
+
+.background {
+   background-color: rgb(0,0,0);
+   color:aliceblue;
+   
+   background-size: cover;
+   height:50rem;
+   width:auto;
+   background-repeat: no-repeat;
+}
+
+.fortune {
+   position: absolute;
+   top:18.75rem;
+   left:25rem;
+}
+
+
+.box {
+   position:absolute;
+   left:43.75rem;
+   top:6.25rem;
+   display: solid;
+   border-style: ridge;
+   border-color: rgb(122, 2, 2);
+   background-color: rgb(69, 69, 69);
+   color:black;
+   width: 25rem;
+   height: 12.5rem;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50px 50px 50px 5px;
+   padding: 5px 5px 5px 5px;
+   word-wrap: normal;
+   font-family: Acme-Regular;
+}
+
+.button {
+   position: absolute;
+   top:40.625rem;
+   left:35rem;
+   border: none;
+   color: rgb(11, 11, 11);
+   padding: 5px;
+   text-align: center;
+   text-decoration: none;
+   border-radius:8px;
+   font-family: Acme-Regular;
+   font-size: 1rem;
+   margin: 4px;
+   cursor: pointer;
+}
+
+.button:hover{
+   cursor: pointer;
+   background-color: rgb(176, 14, 14);
+}
+
