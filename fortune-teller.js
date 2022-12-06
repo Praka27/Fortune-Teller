@@ -37,7 +37,7 @@ const Card = [{
   },
   { Sign: 'The cold ice age has come',
     Reading: 'Hard and difficult times are ahead',
-    Result: 32
+    Result: 30
   }];
 
 const Random_reading = () => {
