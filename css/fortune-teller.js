@@ -2,7 +2,7 @@
 const Card = [{
     Sign: 'I see the reaper has come',
     Reading :'In the near future this says an end to something old and a new begining of life ',
-    result: "The cycle of change begins in 2 days"
+    Result: "The cycle of change begins in 2 days"
   },
   { Sign: 'Love is in the air',
     Reading: 'Time for a new love relationship',
