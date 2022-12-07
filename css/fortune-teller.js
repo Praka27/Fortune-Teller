@@ -1,83 +1,76 @@
+//Declare Array of Object items with 3 different fields
 const Card = [{
     Sign: 'I see the reaper has come',
     Reading :'In the near future this says an end to something old and a new begining of life ',
-    result: 1
+    result: "The cycle of change begins in 2 days"
   },
   { Sign: 'Love is in the air',
     Reading: 'Time for a new love relationship',
-    result: 7
+    result: "The cycle of change begins in 12 days"
   },
   { Sign: 'Family coming together',
     Reading: 'A new member added to your family',
-    Result: 14
+    Result: "The cycle of change begins in 7 days"
   },
   { Sign: 'The moon is now full',
     Reading: 'Time of mystic creations come into your life',
-    Result: 28
+    Result: "The cycle of change begins in 14 days"
   },
   { Sign: 'The Sun shines bright',
     Reading: 'Time to put ideas and sow the seeds for the future',
-    Result: 10
+    Result: "The cycle of change begins in 21 days"
   },
   { Sign: 'Storm clouds are ahead',
     Reading: 'A new conflict is approaching in the near future',
-    Result: 20
+    Result: "The cycle of change begins in 24 days"
   },
   { Sign: 'This is the Storm Card',
     Reading: 'A new conflict is approaching in the near future',
-    Result: 14
+    Result: "The cycle of change begins in 11 days"
   },
   { Sign: 'The bearer of children comes near',
     Reading: 'Tragedy foretold for a family member',
-    Result: 18
+    Result: "The cycle of change begins in 6 days"
   },
   { Sign: 'The eagle eye has awaken',
     Reading: 'Time to focus on oneself to sow the seeds of the future',
-    Result: 24
+    Result: "The cycle of change begins in 28 days"
   },
   { Sign: 'The cold ice age has come',
     Reading: 'Hard and difficult times are ahead',
-    Result: 30
+    Result: "The cycle of change begins in 31 days"
   }];
 
+//Randomize between 3 fields in array of objects
+
 const Random_reading = () => {
-  let reading_card = (Math.floor(Math.random()*3)+1);
+  const reading_card = Math.floor(Math.random()*3);
   return reading_card;
 }
   
+//Randomize 10 objects from array of objects
+
 const Randomcard = () => {
-  let card_number = Math.floor(Math.random()*5);
+  const card_number = Math.floor(Math.random()*10);
   return card_number;
 }
 
+//Declare Random variables and assign to varibale message before passing to Html document id = result
+
+let messagedata = 1;
+let data = 1;
+
 const message = () => {
-  let messagedata = 1;
-  let data =1;
+  let messages = '';
   messagedata = Randomcard();
   data = Random_reading();
+  if (data === 0) {
+    messages = Card[messagedata].Sign;
+  } else if (data === 1) {
+    messages = Card[messagedata].Reading;
+  } else if (data === 2) {
+    messages = Card[messagedata].Result;
+  };
+  document.getElementById("result").value = messages;
+};
 
-  document.getElementById("result").value = "this is a test message";
-}
-
-
-
-/*while (!exited) {
- 
-  let userInput = prompt("Please enter [yes] for your fututre reading message or [no] to quit: ");
-  
-    userInput = userInput.toLowerCase();
-    if (userInput === 'no') {
-      console.log('See Ya! Goodbye!!!');
-      exited = true;
-  } else {
-    messagedata = Randomcard();
-    data = Random_reading();
-    if (data === 1) {
-      console.log(Card[messagedata].Tarot);
-    } else if (data === 2) {
-      console.log(Card[messagedata].Reading);
-    } else if (data === 3) {
-      console.log('The cycle will start in ',Card[messagedata].Result,' days');
-    }
-  }
-};*/
