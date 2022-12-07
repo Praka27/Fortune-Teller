@@ -49,3 +49,35 @@ const Randomcard = () => {
   let card_number = Math.floor(Math.random()*5);
   return card_number;
 }
+
+const message = () => {
+  let messagedata = 1;
+  let data =1;
+  messagedata = Randomcard();
+  data = Random_reading();
+
+  document.getElementById("result").value = "this is a test message";
+}
+
+
+
+/*while (!exited) {
+ 
+  let userInput = prompt("Please enter [yes] for your fututre reading message or [no] to quit: ");
+  
+    userInput = userInput.toLowerCase();
+    if (userInput === 'no') {
+      console.log('See Ya! Goodbye!!!');
+      exited = true;
+  } else {
+    messagedata = Randomcard();
+    data = Random_reading();
+    if (data === 1) {
+      console.log(Card[messagedata].Tarot);
+    } else if (data === 2) {
+      console.log(Card[messagedata].Reading);
+    } else if (data === 3) {
+      console.log('The cycle will start in ',Card[messagedata].Result,' days');
+    }
+  }
+};*/

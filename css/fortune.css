@@ -25,14 +25,14 @@ html {
 }
 
 
-.box {
+#result {
    position:absolute;
    left:43.75rem;
    top:6.25rem;
    display: solid;
    border-style: ridge;
    border-color: rgb(122, 2, 2);
-   background-color: rgb(69, 69, 69);
+   background-color:rgb(70, 68, 68);
    color:black;
    width: 25rem;
    height: 12.5rem;
@@ -43,13 +43,12 @@ html {
    word-wrap: normal;
    font-family: Acme-Regular;
 }
-
 .button {
    position: absolute;
    top:40.625rem;
    left:35rem;
    border: none;
-   color: rgb(11, 11, 11);
+   color: rgb(9, 9, 9);
    padding: 5px;
    text-align: center;
    text-decoration: none;
