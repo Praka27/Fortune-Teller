@@ -66,8 +66,8 @@ const message = () => {
   } else if (data === 2) {
     messages = Card[messagedata].Reading;
   } else if (data === 3) {
-    messages = "The cycle of change begins in " + String(Card[messagedata].Result) + " days";
-  };
+    messages = "The cycle of change begins in " + String(Card[messagedata].Result) + " days.";
+  }
   document.getElementById("result").value = messages;
 };
 
