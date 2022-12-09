@@ -18,7 +18,8 @@ html {
 }
 
 h1 {
-   Font-size:3rem;
+   font-family: "Acme-Regular";
+   Font-size: 3rem;
    color:rgb(244, 209, 72);
    text-align: center;
 }
