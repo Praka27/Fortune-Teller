@@ -18,4 +18,4 @@ Write README file
 Much appreciated Thanks
 
 
-[Click here to run](https://praka27.github.io/Fortune-Teller/)
+[Click here to run]( https://praka27.github.io/Fortune-Teller/)
