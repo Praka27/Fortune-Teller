@@ -63,7 +63,7 @@ h1 {
    font-family: Acme-Regular;
    font-size: 1rem;
    margin: 4px;
-   cursor: pointer;
+   cursor:pointer;
 }
 
 .button:hover{
