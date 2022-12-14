@@ -38,8 +38,8 @@ h1 {
    top: 12rem;
    border-style: ridge;
    border-color: rgb(122, 2, 2);
-   background-color:rgb(70, 68, 68);
-   color:rgb(255, 255, 255);
+   background-color:darkgray;
+   color:white;
    width: 25rem;
    height: 10rem;
    margin-left: auto;
