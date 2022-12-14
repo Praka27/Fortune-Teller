@@ -12,8 +12,8 @@ html {
    color:aliceblue;
    background-image:url("curtains.jpg");
    background-size: cover;
-   height:49.5rem;
-   width:auto;
+   height:49rem;
+   width:94.5rem;
    background-repeat: no-repeat;
 }
 
@@ -23,18 +23,19 @@ h1 {
    color:rgb(244, 209, 72);
    text-align: center;
 }
-
-.fortune {
-   position: absolute;
-   top:30.75rem;
+ .fortune {
+   display:flex;
+   position:absolute;
+   top:30rem;
    left:35rem;
-}
+ }
+
 
 #result {
    position:absolute;
-   left:33.75rem;
-   top:10rem;
-   display: solid;
+   display: flex;
+   left: 35rem;
+   top: 12rem;
    border-style: ridge;
    border-color: rgb(122, 2, 2);
    background-color:rgb(70, 68, 68);
@@ -49,12 +50,14 @@ h1 {
    font-family: Acme-Regular;
    font-size: 2rem;
    text-align: left;
+  
 }
 
 .button {
-   position: absolute;
+   position:absolute;
+   display: flex;
    top:25rem;
-   left:45rem;
+   left:46rem;
    border: none;
    color: rgb(9, 9, 9);
    padding: 5px;
@@ -68,6 +71,8 @@ h1 {
 }
 
 .button:hover{
+   position:absolute;
+   display: flex;
    cursor: pointer;
    background-color: rgb(176, 14, 14);
 }
