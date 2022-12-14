@@ -36,7 +36,7 @@ h1 {
    display: flex;
    left: 35rem;
    top: 12rem;
-   display:solid;
+   fill:darkgray;
    border-style: ridge;
    border-color: rgb(122, 2, 2);
    background-color:darkgray;
